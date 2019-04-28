@@ -5,7 +5,7 @@ using UnityEngine;
 public class IgaguriController : MonoBehaviour
 {
     // Use this for initialization
-    void Shoot(Vector3 dir)
+    public void Shoot(Vector3 dir)
     {
         GetComponent<Rigidbody>().AddForce(dir);
     }
@@ -18,7 +18,7 @@ public class IgaguriController : MonoBehaviour
 
     void Start()
     {
-        Shoot(new Vector3(0, 200, 2000));
+//        Shoot(new Vector3(0, 200, 2000));
     }
 
     // Update is called once per frame
